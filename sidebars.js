@@ -12,15 +12,8 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
     wikiSidebar: [
-        /* Home doc sidebar item */
         'home',
-        /* Installation doc sidebar item */
-        {
-            type: 'doc',
-            id: 'installation',
-            label: 'Installation',
-        },
-        /* EssentialsX Modules Dropdown */
+        'installation',
         {
             type: 'category',
             label: 'Modules',
@@ -35,16 +28,22 @@ const sidebars = {
                 'modules/geoip',
                 'modules/protect',
                 'modules/xmpp'
-
             ]
         },
-        /* EssentialsX Reference Dropdown */
+        {
+            type: 'category',
+            label: 'Tutorials',
+            collapsed: true,
+            items: [
+                'tutorials/discordtut',
+                'tutorials/discordlinktut'
+            ]
+        },
         {
             type: 'category',
             label: 'External Links',
             collapsed: true,
             items: [
-                /* Links */
                 {
                     type: 'link',
                     label: 'Command List (Unofficial)',
@@ -58,7 +57,7 @@ const sidebars = {
                 {
                     type: 'link',
                     label: 'Changelogs',
-                    href: 'https://github.com/EssentialsX/Essentials/releases',
+                    href: 'https://github.com/EssentialsX/Essentials/releases'
                 },
 
             ]
