@@ -11,49 +11,59 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  wikiSidebar: [
-    'home',
-    {
-      type: 'category',
-      label: 'Modules',
-      collapsed: false,
-      items: [
-          'modules/core',
-          'modules/chat',
-          'modules/spawn',
-          'modules/discord',
-          'modules/discordlink',
-          'modules/antibuild',
-          'modules/geoip',
-          'modules/protect',
-          'modules/xmpp'
+    wikiSidebar: [
+        /* Home doc sidebar item */
+        'home',
+        /* Installation doc sidebar item */
+        {
+            type: 'doc',
+            id: 'installation',
+            label: 'Installation',
+        },
+        /* EssentialsX Modules Dropdown */
+        {
+            type: 'category',
+            label: 'Modules',
+            collapsed: false,
+            items: [
+                'modules/core',
+                'modules/chat',
+                'modules/spawn',
+                'modules/discord',
+                'modules/discordlink',
+                'modules/antibuild',
+                'modules/geoip',
+                'modules/protect',
+                'modules/xmpp'
 
-      ]
-    },
-      {
-          type: 'category',
-          label: 'External Links',
-          collapsed: true,
-          items: [
-              {
-                  type: 'link',
-                  label: 'Command List (Unofficial)',
-                  href: 'https://essinfo.xeya.me/commands.html',
-              },
-              {
-                  type: 'link',
-                  label: 'Permission List (Unofficial)',
-                  href: 'https://essinfo.xeya.me/permissions.html',
-              },
-              {
-                  type: 'link',
-                  label: 'Changelogs',
-                  href: 'https://github.com/EssentialsX/Essentials/releases',
-              },
+            ]
+        },
+        /* EssentialsX Reference Dropdown */
+        {
+            type: 'category',
+            label: 'External Links',
+            collapsed: true,
+            items: [
+                /* Links */
+                {
+                    type: 'link',
+                    label: 'Command List (Unofficial)',
+                    href: 'https://essinfo.xeya.me/commands.html',
+                },
+                {
+                    type: 'link',
+                    label: 'Permission List (Unofficial)',
+                    href: 'https://essinfo.xeya.me/permissions.html',
+                },
+                {
+                    type: 'link',
+                    label: 'Changelogs',
+                    href: 'https://github.com/EssentialsX/Essentials/releases',
+                },
 
-          ]
-      },
-  ],
+            ]
+        },
+    ],
 };
 
 export default sidebars;
