@@ -37,7 +37,8 @@ const sidebars = {
             collapsed: true,
             items: [
                 'tutorials/discordtut',
-                'tutorials/discordlinktut'
+                'tutorials/discordlinktut',
+                'tutorials/homelimits'
             ]
         },
         {
